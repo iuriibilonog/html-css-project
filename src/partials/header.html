@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="container">
+    <div class="container header-container">
         <nav class="nav">
         <a hrefs="" class="header__logo">
             <picture>
@@ -13,24 +13,27 @@
             </picture>
         </a>
     </nav>
-        <button class="burger-button">
+        <button class="burger-button" data-menu-open>
             <svg class="burger-button__icon" width="20" height="12">
               <use href="./images/sprite.svg#icon-burger"></use>
             </svg>
           </button>
-          <div class="mobile-menu">
+          <div class="mobile-menu" data-menu>
             <div class="container mobile-menu__container">
-                  <button class="mobile-menu__close">
+                  <button class="mobile-menu__close" data-menu-close>
               <svg class="mobile-menu__close-icon" width="14" height="14">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
             </button>
             <button type="button" class="mobile-menu__button">
                 Buy now
+                <svg class="mobile-menu__button-icon" width="8" height="16">
+                    <use href="./images/sprite.svg#icon-more"></use>
+                  </svg>
               </button>
             <ul class="mobile-menu__list list">
               <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link">Home</a>
+                <a href="" class="mobile-menu__link current-link">Home</a>
               </li>
               <li class="mobile-menu__item">
                 <a href="" class="mobile-menu__link">About us</a>
