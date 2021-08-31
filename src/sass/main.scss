@@ -1,8 +1,6 @@
-
 // // UTILS
 @import './utils/variables';
-@import './utils/vissually-hidden';
-
+@import './utils/visually-hidden';
 
 // BASE
 @import './base/common';
@@ -18,3 +16,6 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
+
+// COMPONENTS
+@import './components/modal-btn';
