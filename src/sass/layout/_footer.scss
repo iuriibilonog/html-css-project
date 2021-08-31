@@ -1,14 +1,23 @@
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
 .footer__tagline-first {
     font-family: Titan One;
+    max-width: 232px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
     color: #FFA5BA;
+    margin-bottom: 17px;
 }
 
 .footer__tagline-second {
+    max-width: 200px;
     font-family: Titan One;
     font-weight: 400;
     font-size: 34px;
@@ -16,11 +25,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #D41443;
+    margin-bottom: 43px;
 }
 
 .social-links {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 46px;
 }
 
 .social-links__item {
@@ -51,6 +63,7 @@
     line-height: 1.86;
     text-align: right;
     color: #000000;
+    margin-bottom: 43px;
 }
 
 .footer__phone {
@@ -60,8 +73,8 @@
 .footer__copyright {
     padding-top: 22px;
     padding-bottom: 25px;
-    padding-right: 79px;
-    padding-left: 91px;
+    padding-right: 75px;
+    padding-left: 75px;
     border-top: 1px solid #E1E1E1;;
     font-family: var(----primary-text-family);
     font-weight: 700;
