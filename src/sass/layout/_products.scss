@@ -71,11 +71,11 @@
   flex-direction: column;
   align-items: center;
 }
-
+/* 
 .description-link {
   padding-bottom: 40px;
 }
-
+ */
 .products__description {
   padding: 0 40px;
   font-weight: 700;
@@ -118,6 +118,16 @@
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/product-1-tablet@2x.png);
   }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/product-1-desktop@1x.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/products/product-1-desktop@2x.png);
+  }
 }
 
 .product-two-pic::before {
@@ -138,6 +148,16 @@
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/product-2-tablet@2x.png);
   }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/product-2-desktop@1x.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/products/product-2-desktop@2x.png);
+  }
 }
 
 .product-three-pic::before {
@@ -157,6 +177,15 @@
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: url(../images/products/product-3-tablet@2x.png);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/products/product-3-desktop@1x.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(../images/products/product-3-desktop@2x.png);
   }
 }
 
@@ -234,7 +263,7 @@
     background-color: var(--accent-text-color);
   }
 }
-.container {
+.products .container {
   border: 1px solid green;
 }
 
