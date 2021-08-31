@@ -39,5 +39,8 @@
 <symbol id="icon-more" viewBox="0 0 26 32">
 <path fill="none" stroke="#D41443" style="stroke: var(--color1, #D41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
 </symbol>
+<symbol id="arrow-cont" viewBox="0 0 22 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.545 3.2l13.7 12.8-13.7 12.8"></path>
+</symbol>
 </defs>
 </svg>
