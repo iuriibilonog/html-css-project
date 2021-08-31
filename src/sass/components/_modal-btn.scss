@@ -5,8 +5,6 @@
   background-color: var(--accent-text-color);
   border-radius: 20px;
   color: var(--primary-text-color);
-  min-width: 62px;
-  min-height: 24px;
   cursor: pointer;
 }
 
@@ -16,7 +14,6 @@
   padding: 15px 25px;
   background-color: var(--primary-text-color);
   border-radius: 20px;
-  min-width: 83px;
-  min-height: 24px;
+  color: var(--accent-text-color);
   cursor: pointer;
 }
