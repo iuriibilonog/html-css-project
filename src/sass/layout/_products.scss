@@ -129,23 +129,6 @@
   }
 }
 
-.products__description::before {
-  position: absolute;
-  display: block;
-  top: 0;
-  content: '';
-  width: 26px;
-  height: 6px;
-
-  left: 50%;
-  transform: translate(-50%);
-  background-image: url(../images/products/three-dots.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  fill: black;
-}
-
 /* .products__element-name::before {
   display: block;
   content: '';
@@ -187,6 +170,23 @@
       url(../images/bg-hero-1600@2x.jpg);
   } */
 /* } */
+
+.products__description::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  content: '';
+  width: 26px;
+  height: 6px;
+
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(../images/products/three-dots.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  fill: black;
+}
 
 .products__addit-description {
   display: block;
