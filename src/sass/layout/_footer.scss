@@ -6,25 +6,25 @@
 }
 
 .footer__tagline-first {
-    font-family: Titan One;
+    font-family: var(--secondary-text-family);
     max-width: 232px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: var(--subtitle-text-color);
     margin-bottom: 17px;
 }
 
 .footer__tagline-second {
     max-width: 200px;
-    font-family: Titan One;
+    font-family: var(--secondary-text-family);
     font-weight: 400;
     font-size: 34px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: var(--accent-text-color);
     margin-bottom: 43px;
 }
 
@@ -53,11 +53,11 @@
 }
 
 .social-links__icon {
-    fill: white;
+    fill: var(--primary-text-color);
 }
 
 .footer__contact {
-    font-family: var(----primary-text-family);
+    font-family: var(--primary-text-family);
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
@@ -67,7 +67,7 @@
 }
 
 .footer__phone {
-    color: #D41443;
+    color: var(--accent-text-color);
 }
 
 .footer__copyright {
@@ -81,5 +81,5 @@
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
-    color: #907E82;
+    color: var(--description-text-color);
 }
