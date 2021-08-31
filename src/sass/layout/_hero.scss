@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  background-color: #ffb8ca;
+  overflow: hidden;
+  min-height: 502px;
+}
+
+.bg-elipse {
+  background-color: #ffa5ba;
+  border-radius: 50%;
+  width: 346px;
+  height: 344px;
+  margin-top: 83px;
+  margin-left: 36px;
+}
+
+.hero__representations,
+.hero__milk-img,
+.hero__desc,
+.hero__desc-btn,
+.hero__girl-img {
+  display: none;
+}
+
+.bg-elipse {
+  position: relative;
+}
+.hero__ice-cream-img {
+  position: absolute;
+  right: 94px;
+  top: 9px;
+}
+
+.hero__information {
+  position: absolute;
+  top: 193px;
+  left: 20px;
+  z-index: 1;
+}
+
+.hero__title {
+  font-family: var(--secondary-text-family);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  max-width: 218px;
+}
+
+.hero__title-end {
+  color: var(--accent-text-color);
+  font-size: 48px;
+  line-height: 0.96;
+}
+
+.hero__btn-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero__btn-item:not(:last-child) {
+  margin-right: 8px;
+}
