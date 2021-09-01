@@ -203,7 +203,8 @@
 }
 
 .products__addit-description {
-  display: block;
+  /*   display: block; */
+  border: none;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -211,6 +212,7 @@
   fill: var(--accent-text-color);
   margin: 0 auto;
   padding: 12px 12px;
+  cursor: pointer;
   transition: fill 250ms linear, background-color 250ms linear;
   &:hover {
     fill: var(--primary-text-color);
