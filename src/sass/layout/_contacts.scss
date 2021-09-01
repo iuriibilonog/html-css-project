@@ -141,7 +141,8 @@
   font-weight: 700;
   color: var(--primary-text-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1); /* добавил ховер фокус на тел*/
 
@@ -168,7 +169,8 @@
   color: var(--accent-text-color);
   line-height: 1.31;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1); /* добавил ховер фокус на тел*/
 
