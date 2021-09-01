@@ -154,7 +154,7 @@
   }
 
   .hero__representations-thumb:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 13px;
   }
 
   .hero__representations {
@@ -234,7 +234,7 @@
 
   .bg-elipse {
     top: 48px;
-    right: 158px;
+    right: 173px;
     width: 538px;
     height: 538px;
   }
@@ -256,7 +256,6 @@
   }
 
   .hero__title-end {
-    color: var(--accent-text-color);
     font-size: 58px;
     line-height: 0.9;
   }
@@ -268,23 +267,19 @@
   }
 
   .hero__btn-rose {
-    display: block;
     min-width: 104px;
     min-height: 40px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.3;
-    text-align: center;
   }
 
   .hero__btn-white {
-    display: block;
     min-width: 138px;
     min-height: 40px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.3;
-    text-align: center;
   }
 
   .hero__milk-img {
@@ -299,10 +294,8 @@
   }
 
   .hero__desc {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
-    color: var(--primary-text-color);
     max-width: 200px;
     margin-bottom: 20px;
   }
@@ -310,11 +303,41 @@
   .hero__desc-btn {
     width: 26px;
     height: 26px;
-    border: none;
-    border-radius: 50%;
   }
 
-  .header__icon-arrow {
-    fill: var(--accent-text-color);
+  .hero__representations-thumb.representations-cafe::after {
+    content: '';
+    top: -7px;
+    right: -13px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero__representations-thumb.representations-trucks::after {
+    content: '';
+    bottom: 45px;
+    right: -13px;
+    background-color: var(--primary-text-color);
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero__representations-thumb:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .hero__representations {
+    top: 152px;
+    right: 29px;
+  }
+
+  .representations-number {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+
+  .representations-type {
+    font-size: 14px;
+    line-height: 1.29;
   }
 }
