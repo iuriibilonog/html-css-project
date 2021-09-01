@@ -69,19 +69,23 @@
 }
 
 .hero__btn-rose {
+  display: block;
   min-width: 62px;
   min-height: 24px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+  text-align: center;
 }
 
 .hero__btn-white {
+  display: block;
   min-width: 83px;
   min-height: 24px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+  text-align: center;
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
@@ -95,8 +99,9 @@
     min-height: 399px;
   }
   .bg-elipse {
-    top: 31px;
-    left: 292px;
+    top: 35px;
+    left: unset;
+    right: 104px;
     width: 324px;
     height: 322px;
   }
@@ -120,6 +125,32 @@
     color: var(--accent-text-color);
     font-size: 34px;
     line-height: 0.9;
+  }
+
+  .hero__representations-thumb.representations-cafe::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    z-index: -1;
+  }
+
+  .hero__representations-thumb.representations-trucks::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 27px;
+    right: -5px;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    z-index: -1;
   }
 
   .hero__representations-thumb:not(:last-child) {
@@ -153,30 +184,6 @@
     text-align: right;
   }
 
-  .representations-elips-cafes {
-    display: block;
-    position: absolute;
-    top: -3px;
-    right: -5px;
-    background-color: var(--primary-text-color);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    z-index: -1;
-  }
-
-  .representations-elips-trucks {
-    display: block;
-    position: absolute;
-    bottom: 27px;
-    right: -5px;
-    background-color: var(--primary-text-color);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-    z-index: -1;
-  }
-
   .hero__milk-img {
     display: block;
     position: absolute;
@@ -203,8 +210,12 @@
   .hero__desc-btn {
     width: 18px;
     height: 18px;
-    border: 0;
+    border: none;
     border-radius: 50%;
+  }
+
+  .header__icon-arrow {
+    fill: var(--accent-text-color);
   }
 
   .hero__girl-img {
@@ -213,5 +224,97 @@
     right: 15px;
     bottom: 0;
     z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    min-height: 665px;
+  }
+
+  .bg-elipse {
+    top: 48px;
+    right: 158px;
+    width: 538px;
+    height: 538px;
+  }
+
+  .hero__ice-cream-img {
+    top: 56px;
+    right: 183px;
+  }
+
+  .hero__information {
+    padding-top: 167px;
+    padding-left: 0;
+  }
+
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.16;
+    max-width: 277px;
+  }
+
+  .hero__title-end {
+    color: var(--accent-text-color);
+    font-size: 58px;
+    line-height: 0.9;
+  }
+  .hero__btn-list {
+    margin-top: 25px;
+  }
+  .hero__btn-item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .hero__btn-rose {
+    display: block;
+    min-width: 104px;
+    min-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .hero__btn-white {
+    display: block;
+    min-width: 138px;
+    min-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .hero__milk-img {
+    left: 15px;
+    bottom: 49px;
+  }
+
+  .hero__desc-thumb {
+    padding-top: 112px;
+    padding-left: 180px;
+    padding-bottom: 60px;
+  }
+
+  .hero__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--primary-text-color);
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .hero__desc-btn {
+    width: 26px;
+    height: 26px;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .header__icon-arrow {
+    fill: var(--accent-text-color);
   }
 }
