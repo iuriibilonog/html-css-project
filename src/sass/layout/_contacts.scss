@@ -1,9 +1,19 @@
 .contacts {
   margin-top: 119px;
-  padding-bottom: 158px;
-  background: linear-gradient(to top, #fff5f6 95%, #ffffff 5%);
-}
+  padding-bottom: 105px;
 
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to top, #fff5f6 95%, #ffffff 5%),
+      url(../images/contacts/bg-contacts.png);
+  }
+
+  //   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  //     screen and (min-resolution: 170dpi) and (min-width: 1280px),
+  //     screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  //     background: linear-gradient(to top, #fff5f6 95%, #ffffff 5%), url(../images/contacts/bg-contacts@2x.png);
+  //   }
+  //   background: linear-gradient(to top, #fff5f6 95%, #ffffff 5%);
+}
 .contacts__list-item {
   padding: 43px 20px 43px 20px;
 
@@ -99,7 +109,6 @@
 
 .button-wrapper {
   margin-top: 54px;
-  //margin-bottom: 60px;       Поправить*/
 }
 
 .btn-contacts-rose {
@@ -140,7 +149,7 @@
 
   &:hover,
   :focus {
-    background: #d8d6d6;
+    background: #f0eded;
   }
 }
 
@@ -201,9 +210,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  //   .contacts {
-  //   }
-
   .item__city,
   .item__text,
   .item__working-week,
@@ -212,13 +218,3 @@
     font-size: 16px;
   }
 }
-
-// @media screen and (min-width: 1280px) {
-//     .hero {
-//         background-image: url(./images/contacts/bg-contacts.png);
-//     }
-// }
-// @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), (min-resolution: 192dpi) and (min-width: 1280px), (min-resolution: 2dppx) and (min-width: 1280px) {
-//     .contacts {
-//         background-image: url(./images/contacts/bg-contacts@2x.png);
-//     }
