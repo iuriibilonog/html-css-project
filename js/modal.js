@@ -11,7 +11,7 @@
   }
 }
 )();
- */
+ ---------------*/
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-product-1-open]'),
