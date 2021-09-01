@@ -69,23 +69,25 @@
 }
 
 .hero__btn-rose {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 62px;
   min-height: 24px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
-  text-align: center;
 }
 
 .hero__btn-white {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 83px;
   min-height: 24px;
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
-  text-align: center;
 }
 
 @media screen and (min-width: 400px) and (max-width: 767px) {
@@ -99,14 +101,14 @@
     min-height: 399px;
   }
   .bg-elipse {
-    top: 35px;
+    top: 31px;
     left: unset;
     right: 104px;
     width: 324px;
     height: 322px;
   }
   .hero__ice-cream-img {
-    top: 32px;
+    top: 35px;
     right: 110px;
   }
 
@@ -216,6 +218,8 @@
 
   .header__icon-arrow {
     fill: var(--accent-text-color);
+    width: 5px;
+    height: 12px;
   }
 
   .hero__girl-img {
@@ -240,7 +244,7 @@
   }
 
   .hero__ice-cream-img {
-    top: 56px;
+    top: 65px;
     right: 183px;
   }
 
@@ -303,6 +307,11 @@
   .hero__desc-btn {
     width: 26px;
     height: 26px;
+  }
+
+  .header__icon-arrow {
+    width: 10px;
+    height: 10px;
   }
 
   .hero__representations-thumb.representations-cafe::after {
