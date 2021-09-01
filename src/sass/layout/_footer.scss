@@ -69,6 +69,13 @@
     height: 32px;
     border-radius: 50%;
     background-color: #FEA5BB;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-text-color);
+    }
 }
 
 .social-links__icon {
@@ -86,7 +93,16 @@
 }
 
 .footer__phone {
+    display: inline-block;
     color: var(--accent-text-color);
+    transform: scale(1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+    }
 }
 
 .footer__copyright {
