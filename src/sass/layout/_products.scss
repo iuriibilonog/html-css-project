@@ -218,7 +218,8 @@
   padding: 12px 12px;
   cursor: pointer;
   transition: fill 250ms linear, background-color 250ms linear;
-  &:hover {
+  &:hover,
+  &:focus {
     fill: var(--primary-text-color);
     background-color: var(--accent-text-color);
   }
