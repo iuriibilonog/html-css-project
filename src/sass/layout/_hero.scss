@@ -17,7 +17,12 @@
   height: 344px;
   top: 27px;
   left: 36px;
+  transition: background-color 3000ms ease-out;
   // left: calc(50% - 173px);
+}
+
+.bg-elipse.active {
+  background-color: var(--accent-text-color);
 }
 
 .hero__information {
