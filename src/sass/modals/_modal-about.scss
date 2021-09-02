@@ -32,11 +32,12 @@
   background-color: #fff5f6;
   position: relative;
   z-index: 100;
-  transition: transform 0.5 2100ms ease-in;
-  transform: rotateY(360deg);
+  transition: transform;
+  transform: rotateY(0deg);
   animation-name: rotateY;
-  animation-duration: 2100ms;
-  animation-timing-function: linear;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 1000ms;
   animation-iteration-count: 1;
 
   @keyframes rotateY {
