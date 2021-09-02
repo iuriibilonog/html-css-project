@@ -197,6 +197,24 @@
     font-size: 58px;
   }
 }
+
+.about__kg {
+  color: var(--accent-text-color);
+  font-family: titan One;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  margin-top: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+.about__point-kg-block {
+  display: flex;
+}
 .about__point-text {
   color: var(--accent-text-color);
   font-family: var(--primary-text-family);

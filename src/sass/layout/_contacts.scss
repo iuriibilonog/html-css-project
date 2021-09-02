@@ -41,8 +41,13 @@
   border-radius: 6px;
   padding: 3px 25px;
   margin-bottom: 25px;
+  text-transform: uppercase;
 
   display: inline-block;
+
+  &.green {
+    background-color: #c2e297;
+  }
 }
 
 .item__city {
@@ -103,6 +108,14 @@
   font-weight: 500;
   font-size: 12px;
 
+  transform: scale(1); /* добавил ховер фокус на тел*/
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  :focus {
+    transform: scale(1.05);
+  }
+
   &.phone {
     margin-bottom: 10px;
     padding-top: 25px;
@@ -128,9 +141,16 @@
   font-weight: 700;
   color: var(--primary-text-color);
 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1); /* добавил ховер фокус на тел*/
+
   &:hover,
   :focus {
-    background: #c0133e;
+    background-color: #c0133e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
   }
 }
 
@@ -149,9 +169,16 @@
   color: var(--accent-text-color);
   line-height: 1.31;
 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1); /* добавил ховер фокус на тел*/
+
   &:hover,
   :focus {
-    background: #f0eded;
+    background-color: #ecebeb;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
   }
 }
 
@@ -183,11 +210,12 @@
 
   .contacts__list {
     display: flex;
-    margin-left: -30px;
+    flex-wrap: wrap;
+    margin-left: -20px;
   }
   .contacts__list-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
   }
   .button-wrapper {
     display: flex;
@@ -221,5 +249,15 @@
   .item__hours,
   .link-adress {
     font-size: 16px;
+  }
+
+  .contacts__list {
+    margin-left: -30px;
+  }
+  .contacts__list-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
