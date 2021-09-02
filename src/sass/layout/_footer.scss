@@ -118,3 +118,22 @@
     text-align: center;
     color: var(--description-text-color);
 }
+
+.modal-team-btn {
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    background-color: transparent;
+    color: var(--description-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    border: transparent;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.modal-team-btn__accent {
+    color: var(--accent-text-color);
+}
