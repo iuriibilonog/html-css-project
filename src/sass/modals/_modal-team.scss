@@ -28,8 +28,9 @@
   border-radius: 5px;
   z-index: 10; */
   background-image: url(../../src/images/team/phoenix.png), radial-gradient(white, yellow, red);
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
+  background-size: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -46,6 +47,7 @@
 .teammate__pic {
   border-radius: 50%;
   width: 130px;
+  border: 3px solid yellow;
 }
 
 .picture {
