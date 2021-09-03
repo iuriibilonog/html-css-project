@@ -3,8 +3,12 @@
   flex-direction: column;
 }
 
+.backdrop-header-1 {
+  z-index: 10;
+}
+
 .backdrop-header-2 {
-    z-index: 6;
+    z-index: 10;
 }
 
 .modal-header__title {
