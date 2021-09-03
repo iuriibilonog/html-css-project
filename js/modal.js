@@ -23,15 +23,20 @@
   const refs = {
     openModalBtn: document.querySelector('[data-modal-header-2-open]'),
     closeModalBtn: document.querySelector('[data-modal-header-2-close]'),
+    closeModalBody: document.querySelector('.backdrop-header-2'),
     modal: document.querySelector('[data-modal-header-2]'),
   };
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBody.addEventListener('click', function (e) {
+    if (e.target == document.querySelector('.backdrop-header-2')) {
+      toggleModal();
+    }
+  });
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
-}
-)();
+})();
 
 // HERO MODAL WINDOW
 
