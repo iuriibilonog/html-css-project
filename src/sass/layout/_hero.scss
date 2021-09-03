@@ -1,7 +1,9 @@
+.hero-header {
+  background-color: #ffb8ca;
+}
+
 .hero {
   position: relative;
-  background-color: #ffb8ca;
-  overflow: hidden;
   min-height: 437px;
 }
 
@@ -18,7 +20,6 @@
   top: 27px;
   left: 36px;
   transition: background-color 3000ms ease-out;
-  // left: calc(50% - 173px);
 }
 
 .bg-elipse.active {
@@ -29,8 +30,6 @@
   position: relative;
   padding-top: 137px;
   padding-left: 5px;
-  // top: 193px;
-  // left: 20px;
   z-index: 1;
 }
 
@@ -118,6 +117,12 @@
 @media screen and (min-width: 400px) and (max-width: 767px) {
   .bg-elipse {
     left: calc(50% - 173px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    overflow: hidden;
   }
 }
 
