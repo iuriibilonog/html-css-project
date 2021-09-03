@@ -67,7 +67,7 @@
 }
 
 .description-container {
-  padding-top: 30px;
+  /*   padding-top: 30px; */
 }
 
 .products__description {
@@ -183,15 +183,17 @@
 }
 
 .products__description::before {
-  position: absolute;
+  /*   position: absolute; */
   display: block;
-  top: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  /*   bottom: 50%; */
   content: '';
   width: 26px;
   height: 6px;
 
-  left: 50%;
-  transform: translate(-50%);
+  /*   left: 50%; */
+  /*   transform: translate(-50%); */
   background-image: url(../images/products/three-dots.svg);
   background-position: center;
   background-repeat: no-repeat;
