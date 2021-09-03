@@ -1,8 +1,10 @@
+.hero-header {
+  background-color: #ffb8ca;
+}
+
 .hero {
   position: relative;
-  background-color: #ffb8ca;
-  overflow: hidden;
-  min-height: 502px;
+  min-height: 437px;
 }
 
 .hero__thumb {
@@ -15,17 +17,19 @@
   border-radius: 50%;
   width: 346px;
   height: 344px;
-  top: 83px;
+  top: 27px;
   left: 36px;
-  // left: calc(50% - 173px);
+  transition: background-color 3000ms ease-out;
+}
+
+.bg-elipse.active {
+  background-color: var(--accent-text-color);
 }
 
 .hero__information {
   position: relative;
-  padding-top: 193px;
+  padding-top: 137px;
   padding-left: 5px;
-  // top: 193px;
-  // left: 20px;
   z-index: 1;
 }
 
@@ -86,6 +90,7 @@
   &:focus {
     transform: scale(1.1);
     background-color: #c7133e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -107,6 +112,7 @@
   &:focus {
     transform: scale(1.1);
     background-color: #ecebeb;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -116,24 +122,30 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    overflow: hidden;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
-    min-height: 399px;
+    min-height: 312px;
   }
   .bg-elipse {
-    top: 31px;
+    top: -53px;
     left: unset;
-    right: 104px;
+    right: 117px;
     width: 324px;
     height: 322px;
   }
   .hero__ice-cream-img {
-    top: 35px;
+    top: 31px;
     right: 110px;
   }
 
   .hero__information {
-    padding-top: 102px;
+    padding-top: 15px;
     padding-left: 0;
   }
 
@@ -182,7 +194,7 @@
   .hero__representations {
     display: block;
     position: absolute;
-    top: 94px;
+    top: 15px;
     right: 20px;
     z-index: 1;
   }
@@ -266,23 +278,23 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    min-height: 665px;
+    min-height: 578px;
   }
 
   .bg-elipse {
-    top: 48px;
+    top: -25px;
     right: 173px;
     width: 538px;
     height: 538px;
   }
 
   .hero__ice-cream-img {
-    top: 65px;
+    top: 56px;
     right: 183px;
   }
 
   .hero__information {
-    padding-top: 167px;
+    padding-top: 84px;
     padding-left: 0;
   }
 
@@ -369,7 +381,7 @@
   }
 
   .hero__representations {
-    top: 152px;
+    top: 74px;
     right: 29px;
   }
 
