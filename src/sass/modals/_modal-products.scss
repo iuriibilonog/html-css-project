@@ -2,6 +2,7 @@
 .modal-product-2-container,
 .modal-product-3-container {
   border-radius: 5%;
+  z-index: 20;
 }
 
 .modal-product-1-container {
@@ -36,6 +37,12 @@
 
 .copyright {
   text-align: right;
+  margin-top: 10px;
+}
+
+.close-modal-product {
+  top: 14px;
+  right: 14px;
 }
 
 .product-example__pic {
