@@ -1,0 +1,90 @@
+<!-- modal location -->
+
+<section class="modal-window">
+  <div class="backdrop backdrop-contacts-locations is-hidden" data-modal-locations>
+    <div class="modal contacts-modal">
+      <button class="close-modal" type="button" data-modal-locations-close>
+        <svg class="close-modal-icon" width="11px" height="11px">
+          <use href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <p class="modal-title__locations">Оur affiliates in the world</p>
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d232342.26244905696!2d73.66008692774909!3d24.50804307699021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sShreemann%20!5e0!3m2!1sru!2snl!4v1630536507507!5m2!1sru!2snl"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- modal franchisa -->
+
+<section class="modal-window">
+  <div class="backdrop backdrop-contacts-franchise is-hidden" data-modal-franchise>
+    <div class="modal">
+      <button class="close-modal" type="button" data-modal-franchise-close>
+        <svg class="close-modal-icon" width="11px" height="11px">
+          <use href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <p class="modal-contacts__title">For cooperation - fill out the form</p>
+      <form class="modal-contacts__form">
+        <label class="modal-contacts__field">
+          <span class="modal-contacts__item">Name</span>
+          <span class="modal-contacts__input-wrapper">
+            <input
+              type="text"
+              name="user-name"
+              class="modal-contacts__input"
+              minlength="2"
+              pattern="[a-zA-Zа-яёА-ЯЁ]+"
+              title="No numbers and symbols"
+              required
+            />
+          </span>
+        </label>
+        <label class="modal-contacts__field">
+          <span class="modal-contacts__item">Phone</span>
+          <span class="modal-contacts__input-wrapper">
+            <input
+              type="tel"
+              name="user-phone"
+              class="modal-contacts__input"
+              pattern="+38[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+              title="+610950010011"
+              required
+            />
+          </span>
+        </label>
+        <label class="modal-contacts__field">
+          <span class="modal-contacts__item">City</span>
+          <span class="modal-contacts__input-wrapper">
+            <input type="text" name="user-city" class="modal-contacts__input" required />
+          </span>
+        </label>
+        <label class="modal-contacts__field">
+          <span class="modal-contacts__item">E-mail</span>
+          <span class="modal-contacts__input-wrapper">
+            <input type="email" name="user-city" class="modal-contacts__input" required />
+          </span>
+        </label>
+
+        <label class="modal-contacts__field">
+          <span class="modal-contacts__item">Leave your message</span>
+          <textarea
+            name="user-message"
+            class="modal-contacts__message"
+            placeholder="Message"
+          ></textarea>
+        </label>
+        <button type="submit" class="modal-contacts__button">Send</button>
+      </form>
+    </div>
+  </div>
+</section>

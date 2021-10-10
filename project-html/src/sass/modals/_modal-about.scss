@@ -1,0 +1,85 @@
+.about__modal-title {
+  margin-bottom: 15px;
+  color: var(--accent-text-color);
+  font-family: var(--secondary-text-family);
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.4;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
+}
+.modal-title-main {
+  font-size: 40px;
+  font-family: var(--secondary-text-family);
+  text-align: center;
+  display: block;
+  margin-bottom: 15px;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
+}
+.about__modal-list {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 45vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff5f6;
+  overflow: auto;
+  position: relative;
+  z-index: 100;
+  transition: transform;
+  transform: rotateY(0deg);
+  animation-name: rotateY;
+  animation-duration: 2000ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-delay: 2500ms;
+  animation-iteration-count: 1;
+
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 35vh;
+  }
+}
+
+.about__modal-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  font-family: var(--primary-text-family);
+  color: var(--secondary-text-color);
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+.about__modal-fact {
+  margin-bottom: -20px;
+}
+.about__modal-numero {
+  font-size: 60px;
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  color: var(--subtitle-text-color);
+  z-index: -1;
+  display: block;
+  opacity: 0.5;
+  @media screen and (max-width: 480px) {
+    font-size: 40px;
+  }
+}
